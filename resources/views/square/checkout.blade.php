@@ -9,8 +9,8 @@
     <h1>Pay $1.00 with Square</h1>
 {{-- add this square html code   --}}
 <!-- HTML Part -->
-<div id="card-container"></div>
-<button id="card-button">Pay</button>
+<div class="container-change" id="card-container"></div>
+<button class="button-change" id="card-button">Pay</button>
 
 <script>
     // {{-- add this script on your checkout page like this --}}
