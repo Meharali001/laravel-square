@@ -30,6 +30,7 @@ class SquarePaymentController extends Controller
 
     public function charge(Request $request)
     {
+        
         $request->validate([
             'nonce' => 'required|string',
         ]);

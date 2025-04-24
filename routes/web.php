@@ -13,14 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // routes/web.php
-use App\Http\Controllers\PaymentController;
+// use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\SquarePaymentController;
+
+
+// create (square/checkout) route for show square payment gatway form and create '/square/charge post route for send payment request then create squarepaymentController and view file of checkout 
 
 Route::get('/square/checkout', [SquarePaymentController::class, 'checkout']);
 Route::post('/square/charge', [SquarePaymentController::class, 'charge']);
 
-Route::get('/pay', [PaymentController::class, 'showForm'])->name('payment.form');
-Route::post('/process', [PaymentController::class, 'processPayment'])->name('payment.process');
+
 
 Route::get('/', function () {
     return view('welcome');

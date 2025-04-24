@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Square Payment</title>
+    {{-- use this cdn for show square card --}}
     <script type="text/javascript" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
 </head>
 <body>
@@ -12,6 +13,8 @@
 <button id="card-button">Pay</button>
 
 <script>
+    // {{-- add this script on your checkout page like this --}}
+    
     const appId = "{{ config('square.app_id') }}";
     const locationId = "{{ config('square.location_id') }}";
 
