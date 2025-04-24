@@ -7,14 +7,14 @@
 </head>
 <body>
     <h1>Pay $1.00 with Square</h1>
-
+{{-- add this square html code   --}}
 <!-- HTML Part -->
 <div id="card-container"></div>
 <button id="card-button">Pay</button>
 
 <script>
     // {{-- add this script on your checkout page like this --}}
-    
+
     const appId = "{{ config('square.app_id') }}";
     const locationId = "{{ config('square.location_id') }}";
 
